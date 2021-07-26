@@ -74,7 +74,7 @@ const { convertSticker } = require('./plugins/swm.js')
 //Modal Dikit Broh:v
 DapKey = 'bloodsword' //https://dapuhy-api.herokuapp.com
 LeysKey = 'dappakntlll' //beli di https://leyscoders-api.herokuapp.com
-LolKey = 'masukin apikey lu' //beli di https://api.lolhuman.xyz
+LolKey = 'masukin apikey lu' //register di https://api.lolhuman.xyz
 
 //Settings => Semua Aturnya Disini <=
 fake = 'BloodSword'
