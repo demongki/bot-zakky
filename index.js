@@ -4090,34 +4090,60 @@ break
 				break
 //==========================================BATES NGAB==========================================\\
 //DOWNLOAD MENU
-case 'instagram':
-if (!isUser) return reply(dpa.noregis)
-if (isBanned) return reply(dpa.baned)
-if (isLimit(sender)) return reply(dpa.limitend)
-if (args.length == 0) return reply(`Example: ${prefi>
-ini_url = args[0]
-ini_url = await fetchJson(`https://api.lolhuman.xyz/>
-ini_url = ini_url.result
-ini_type = image
-if (ini_url.includes(".mp4")) ini_type = video
-ini_buffer = await getBuffer(ini_url)
-await dp.sendMessage(from, ini_buffer, ini_type, { q>
-break
-case 'ytmp3':
-if (!isUser) return reply(dpa.noregis)
-if (isBanned) return reply(dpa.baned)
-if (isLimit(sender)) return reply(dpa.limitend)
-if (args.length == 0) return reply(`Example: ${prefi>
-                    ini_link = args[0]
-                    get_result = await fetchJson(`ht>
-                    get_result = get_result.result
-                    ini_txt = `${get_result.title} ->
-                    ini_buffer = await getBuffer(get>
-                    await dp.sendMessage(from, ini_b>
-                    get_audio = await getBuffer(get_>
-                    await dp.sendMessage(from, get_a>
-                    break
 
+case 'instagram':
+
+if (!isUser) return reply(dpa.noregis)
+
+if (isBanned) return reply(dpa.baned)
+
+if (isLimit(sender)) return reply(dpa.limitend)
+
+if (args.length == 0) return reply(`Example: ${prefix + command} https://www.instagram.com/p/CJ8XKFmJ4al/?igshid=1acpcqo44kgkn`)
+
+ini_url = args[0]
+
+ini_url = await fetchJson(`https://api.lolhuman.xyz/api/instagram?apikey=${LolKey}&url=${ini_url}`)
+
+ini_url = ini_url.result
+
+ini_type = image
+
+if (ini_url.includes(".mp4")) ini_type = video
+
+ini_buffer = await getBuffer(ini_url)
+
+await dp.sendMessage(from, ini_buffer, ini_type, { quoted: freply })
+
+break
+
+case 'ytmp3':
+
+if (!isUser) return reply(dpa.noregis)
+
+if (isBanned) return reply(dpa.baned)
+
+if (isLimit(sender)) return reply(dpa.limitend)
+
+if (args.length == 0) return reply(`Example: ${prefix + command} https://www.youtube.com/watch?v=qZIQAk-BUEc`)
+
+                    ini_link = args[0]
+
+                    get_result = await fetchJson(`https://api.lolhuman.xyz/api/ytaudio2?apikey=${LolKey}&url=${ini_link}`)
+
+                    get_result = get_result.result
+
+                    ini_txt = `${get_result.title} - ${get_result.size}`
+
+                    ini_buffer = await getBuffer(get_result.thumbnail)
+
+                    await dp.sendMessage(from, ini_buffer, image, { quoted: freply, caption: ini_txt })
+
+                    get_audio = await getBuffer(get_result.link)
+
+                    await dp.sendMessage(from, get_audio, audio, { mimetype: 'audio/mp4', filename: `${get_result.title}.mp3`, quoted: freply })
+
+                    break
 
 
 
