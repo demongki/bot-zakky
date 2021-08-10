@@ -72,7 +72,7 @@ const exif = new Exif()
 const { convertSticker } = require('./plugins/swm.js')
 
 //Modal Dikit Broh:v
-DapKey = 'bloodsword' 
+DapKey = 'FRzQxEKnp5ySDbu' 
 LeysKey = 'dappakntlll' //beli di https://leyscoders-api.herokuapp.com
 LolKey = 'db62c05c323dd9f650258128' //beli di https://api.lolhuman.xyz
 ZeksKey = 'WAITeN1CgDkEEyllmU9nWyGFoPX'
