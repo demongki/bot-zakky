@@ -79,7 +79,7 @@ LeysKey = 'dappakntlll' //beli di https://leyscoders-api.herokuapp.com
 //BloodSword' //beli di https://api.lolhuman.xyz
 // 1c9c4b4017ab7e71569bde00
 ZeksKey = 'WAITeN1CgDkEEyllmU9nWyGFoPX'
-LolKey = 'BloodSword'
+LolKey = '1c9c4b4017ab7e71569bde00'
 PencariKode = 'pais'
 Hardianto =  'hardianto'
 
