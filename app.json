@@ -1,0 +1,7 @@
+{
+  "name": "bloodsword",
+  "description": "whatsapp bot build with nodejs",
+  "repository": "https://github.com/demongki/bot-zakky",
+  "logo": "https://api.zeks.xyz/logo.jpg",
+  "keywords": ["nodejs", "bot", "whatsapp bot", "whatsapp automation"]
+}
