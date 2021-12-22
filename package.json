@@ -20,7 +20,7 @@
   "author": "MhankBarBar",
   "license": "ISC",
   "dependencies": {
-    "@adiwajshing/baileys": "^3.4.1",
+    "@adiwajshing/baileys": "^3.5.3",
     "async": "^2.4.1",
     "axios": "^0.21.0",
     "brainly-scraper": "^1.0.3",
