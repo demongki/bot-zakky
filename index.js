@@ -333,7 +333,7 @@ function kyun(seconds){
 
 async function starts() {
 const dp = new WAConnection()
-dp.version = [2, 2119, 6]
+dp.version = [2, 2143, 3]
 dp.logger.level = 'warn'
 console.log(banner.string)
    dp.on('qr', qr => {
